@@ -5,7 +5,7 @@ Rozwiązane zadania:
 | Zadanie | Co to jest | Gdzie |
 |---|---|---|
 | **1.1 Hardware** | Moduł przetwornicy 24 V → 5 V / 3 A na AP63300, płytka 30 × 30 mm, 4 × M2 | `hardware/` |
-| **2.1 + 2.2 Firmware** | STM32G474RET3: sterowanie 50 × WS2812B (TIM + DMA) oraz biblioteka TLV z obsługą ramek `msg.h` | `firmware/` |
+
 
 ## Hardware (zadanie 1.1)
 
