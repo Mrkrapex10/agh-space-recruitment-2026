@@ -5,7 +5,7 @@ Rozwiązane zadania:
 | Zadanie | Co to jest | Gdzie |
 |---|---|---|
 | **1.1 Hardware** | Moduł przetwornicy 24 V → 5 V / 3 A na AP63300, płytka 30 × 30 mm, 4 × M2 | `hardware/` |
-| **2.1 + 2.2 Firmware** | STM32G474RET3: sterowanie 50 × WS2812B (TIM + DMA) oraz biblioteka TLV z obsługą ramek `msg.h` | `firmware/` |
+| **1.2 Hardware** | Projekt systemu: diagram i notatka dla grzałek, pompy, belek tensometrycznych, termopar, serw i paska WS2812B (zasilanie 24 V + CAN FD) | `hardware/system_1_2/` |
 
 ## Hardware (zadanie 1.1)
 
@@ -14,8 +14,8 @@ Rozwiązane zadania:
   Biblioteki (symbol AP63300 i footprint cewki Bourns SRP5030HMT) leżą w tym samym folderze projektu, więc nic nie trzeba doinstalowywać.
 - Pliki PDF ze schematu wyeksportowane z KiCada: `hardware/ap63300_buck/export/`.
 
-## Firmware (zadania 2.1 i 2.2)
+## Hardware (zadanie 1.2)
 
-Kod, struktura projektu i instrukcja konfiguracji CubeMX i budowania (CMake + Ninja) są w [`firmware/README.md`](firmware/README.md).
-Logika biblioteki TLV i obsługi ramek ma testy uruchamiane na komputerze (`firmware/tests/`).
-Kod nie był jeszcze uruchamiany na prawdziwej płytce z mikrokontrolerem.
+- Diagram systemu (strona 1, format A3) i notatka z założeniami, bilansem prądów, doborem układów i złączy oraz uwagami do projektu PCB (strony 2–5):
+  [`hardware/system_1_2/Zadanie_1_2_diagram_i_notatka.pdf`](hardware/system_1_2/Zadanie_1_2_diagram_i_notatka.pdf)
+- Noty katalogowe wybranych układów i serii złączy: [`hardware/system_1_2/datasheets/`](hardware/system_1_2/datasheets/) (lista plików i źródeł w `README.md` w tym folderze).
