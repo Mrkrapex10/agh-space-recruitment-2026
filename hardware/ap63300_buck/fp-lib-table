@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "ap63300_buck") (type "KiCad") (uri "${KIPRJMOD}/ap63300_buck.pretty") (options "") (descr ""))
+)
