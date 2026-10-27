@@ -14,8 +14,3 @@ Rozwiązane zadania:
   Biblioteki (symbol AP63300 i footprint cewki Bourns SRP5030HMT) leżą w tym samym folderze projektu, więc nic nie trzeba doinstalowywać.
 - Pliki PDF ze schematu wyeksportowane z KiCada: `hardware/ap63300_buck/export/`.
 
-## Firmware (zadania 2.1 i 2.2)
-
-Kod, struktura projektu i instrukcja konfiguracji CubeMX i budowania (CMake + Ninja) są w [`firmware/README.md`](firmware/README.md).
-Logika biblioteki TLV i obsługi ramek ma testy uruchamiane na komputerze (`firmware/tests/`).
-Kod nie był jeszcze uruchamiany na prawdziwej płytce z mikrokontrolerem.
