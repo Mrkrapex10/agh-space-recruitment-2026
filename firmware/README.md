@@ -32,7 +32,9 @@ cmake --build --preset Debug
 
 Wynik w `build/Debug/`: `agh_firmware.elf`, `agh_firmware.hex`, `agh_firmware.bin`
 (ok. 19 KB Flash, ok. 3 KB RAM). Ostrzeżenia linkera `_close/_lseek/_read/_write is not implemented` są normalne –
-to stuby newlib, których program nie używa.
+to stuby newlib, których program nie używa. Nowsze wersje linkera (binutils od 2.39, m.in. w Arm GNU Toolchain 15)
+dodatkowo ostrzegają o segmencie LOAD z uprawnieniami RWX. Wynika to ze skryptu linkera i nie ma znaczenia dla pracy
+programu na mikrokontrolerze (brak MMU).
 
 Wgranie na płytkę (opcjonalnie): NUCLEO-G474RE jest widoczna jako dysk USB, wystarczy skopiować na nią `agh_firmware.bin`
 (można też użyć STM32CubeProgrammer).
